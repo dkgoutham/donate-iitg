@@ -1,0 +1,115 @@
+.navbar{
+    height: 85px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    
+    &.scrolled{
+        background: linear-gradient(to top,rgba(0, 18, 25, 1), rgba(0, 18, 25, 1));
+        box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.88);
+    }
+    .navbarWrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 0 40px;
+
+        .left{
+            font-size: 45px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+        }
+
+       .right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .signup{
+                margin-left: 10px;
+                font-size: 20px;
+                padding: 10px 20px;
+                border-radius: 10px;
+                background-color: #D00000;
+                color: #F1FAEE;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+
+            .signup:hover{
+                box-shadow: 0px 0px 2px 0px rgb(250, 244, 244);
+            }
+
+            .login{
+                margin-left: 10px;
+                font-size: 20px;
+                padding: 10px 20px;
+                border-radius: 10px;
+                color: #F1FAEE;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+
+            .login:hover{
+                border-bottom: 1px solid white;
+                border-radius: 3px;
+            }
+
+            .logout{
+                margin-left: 10px;
+                font-size: 23px;
+                padding: 7px 15px;
+                border-radius: 10px;
+                background-color: #D00000;
+                color: #F1FAEE;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+            }
+            .logout:hover{
+                box-shadow: 0px 0px 12px -1px rgb(237, 237, 237);
+            }
+
+            .welcome{
+                margin-right: 10px;
+                font-size: 15px;
+                color: white;
+            }
+
+            .donate{
+                margin-right: 25px;
+                font-size: 20px;
+                cursor: pointer;
+                color: white;
+                padding: 5px 10px;
+            }
+
+            .donate:hover{
+                border-bottom: 2px solid white;
+                border-radius: 5px;
+            }
+
+            .request{
+                margin-right: 25px;
+                font-size: 20px;
+                cursor: pointer;
+                color: white;
+                padding: 5px 10px;
+            }
+
+            .request:hover{
+                border-bottom: 2px solid white;
+                border-radius: 5px;
+            }
+        }
+    }
+}
